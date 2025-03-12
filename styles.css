@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-image: url('bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.navbar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.manufacturer {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.text-container {
+    z-index: 1;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.order-button {
+    background-color: #ff0000;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    transition: background-color 0.3s;
+}
+
+.order-button:hover {
+    background-color: #ff000083;
+}
+
+.button-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.bottom-button {
+    background-color: #ff0000;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.0rem;
+    transition: background-color 0.3s;
+    width: auto;
+}
+
+.bottom-button:hover {
+    background-color: #ff000083;
+}
