@@ -8,4 +8,4 @@ A website posing as Bruckell from BeamNG. It has some showcase pages and even an
 An American make of cars. Why not you look at the website and see what I mean?
 
 # License
-GNU GPL v3
+GNU GPL v3 (images may be subject to copyright)
