@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Order a Bastion</title>
     <link rel="stylesheet" href="order-style.css">
+    <style>
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a:visited {
+            color: #5a5a5a;
+        }
+    </style>
 </head>
-
 <body>
     <div class="container">
         <i>If you want to know more about the Bastion before ordering, <a href="bastion">click here</a>.</i>
@@ -27,14 +37,11 @@
             <img id="carImage" src="/vehicles/se.png" width="400">
             <div class="car-info">
                 <h2 id="carTitle">SE 3.5</h2>
-                <p id="carStats">Engine: 3.5L V6<br>Drivetrain: RWD / AWD<br>Transmission: 8-speed automatic<br>Top
-                    Speed: 200 KM/H<br>Power: 280 HP<br>0-100 KM/H: 6.5 seconds<br>Price: RWD - $34,500 | AWD - $37,500
-                </p>
+                <p id="carStats">Engine: 3.5L V6<br>Drivetrain: RWD / AWD<br>Transmission: 8-speed automatic<br>Top Speed: 200 KM/H<br>Power: 280 HP<br>0-100 KM/H: 6.5 seconds<br>Price: RWD - $34,500 | AWD - $37,500</p>
             </div>
         </div>
 
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="order-button">Checkout</a> <a
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="order-button">Find Used</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="order-button">Checkout</a> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="order-button">Find Used</a>
     </div>
 
     <script>
@@ -43,47 +50,47 @@
             const val = sel.value;
 
             if (val === "fleet") {
-                window.location.href = "fleet.html";
+                window.location.href = "fleet.html"; 
                 return;
             }
 
             const details = {
-                se: {
-                    title: "SE 3.5",
-                    stats: "Engine: 3.5L V6<br>Drivetrain: RWD / AWD<br>Transmission: 8-speed automatic<br>Top Speed: 200 KM/H<br>Power: 280 HP<br>0-100 KM/H: 6.5 seconds<br>Price: RWD - $34,500 | AWD - $37,500",
-                    image: "/vehicles/se.png"
-                },
-                luxe35: {
-                    title: "Luxe 3.5",
-                    stats: "Engine: 3.5L V6<br>Drivetrain: AWD only<br>Transmission: 8-speed automatic<br>Top Speed: 200 KM/H<br>Power: 280 HP<br>0-100 KM/H: 6.5 seconds<br>Price: $39,900",
-                    image: "/vehicles/luxe.png"
-                },
-                luxe57: {
-                    title: "Luxe 5.7",
-                    stats: "Engine: 5.7L V8<br>Drivetrain: RWD / AWD<br>Transmission: 8-speed automatic<br>Top Speed: 200 KM/H<br>Power: 370 HP<br>0-100 KM/H: 5.3 seconds<br>Price: RWD - $44,900 | AWD - $47,900",
-                    image: "/vehicles/luxe.png"
-                },
-                sport57: {
-                    title: "Sport 5.7",
-                    stats: "Engine: 5.7L V8<br>Drivetrain: RWD only<br>Transmission: 6-speed manual / 8-speed automatic<br>Top Speed: 220 KM/H<br>Power: 370 HP<br>0-100 KM/H: 5.2 seconds<br>Price: $45,300<br>Manual transmission available",
-                    image: "/vehicles/sport57.png"
-                },
-                sport65: {
-                    title: "Sport GT 6.5",
-                    stats: "Engine: 6.5L V8<br>Drivetrain: RWD only<br>Transmission: 6-speed manual / 8-speed automatic<br>Top Speed: 220 KM/H<br>Power: 490 HP<br>0-100 KM/H: 5.0 seconds<br>Price: $54,900<br>Manual transmission available",
-                    image: "/vehicles/sport65.png"
-                },
-                battlehawk: {
-                    title: "Battlehawk",
-                    stats: "Engine: 6.5L Supercharged V8<br>Drivetrain: RWD only<br>Transmission: 6-speed manual / 8-speed automatic<br>Top Speed: 330 KM/H (not limited)<br>Power: 720 HP<br>0-100 KM/H: 4.6 seconds<br>Price: $79,600<br>Manual transmission available",
-                    image: "/vehicles/battlehawk.png"
-                },
-                redtail: {
-                    title: "Redtail",
-                    stats: "Engine: 6.5L Supercharged V8<br>Drivetrain: RWD only<br>Transmission: 8-speed automatic<br>Top Speed: 330 KM/H (not limited)<br>Power: 820 HP<br>0-100 KM/H: 4.6 seconds<br>Price: $89,990",
-                    image: "/vehicles/redtail.png"
-                }
-            };
+    se: {
+        title: "SE 3.5",
+        stats: "Engine: 3.5L V6<br>Drivetrain: RWD / AWD<br>Transmission: 8-speed automatic<br>Top Speed: 200 KM/H<br>Power: 280 HP<br>0-100 KM/H: 6.5 seconds<br>Price: RWD - $34,500 | AWD - $37,500",
+        image: "/vehicles/se.png"
+    },
+    luxe35: {
+        title: "Luxe 3.5",
+        stats: "Engine: 3.5L V6<br>Drivetrain: AWD only<br>Transmission: 8-speed automatic<br>Top Speed: 200 KM/H<br>Power: 280 HP<br>0-100 KM/H: 6.5 seconds<br>Price: $39,900",
+        image: "/vehicles/luxe.png"
+    },
+    luxe57: {
+        title: "Luxe 5.7",
+        stats: "Engine: 5.7L V8<br>Drivetrain: RWD / AWD<br>Transmission: 8-speed automatic<br>Top Speed: 200 KM/H<br>Power: 370 HP<br>0-100 KM/H: 5.3 seconds<br>Price: RWD - $44,900 | AWD - $47,900",
+        image: "/vehicles/luxe.png"
+    },
+    sport57: {
+        title: "Sport 5.7",
+        stats: "Engine: 5.7L V8<br>Drivetrain: RWD only<br>Transmission: 6-speed manual / 8-speed automatic<br>Top Speed: 220 KM/H<br>Power: 370 HP<br>0-100 KM/H: 5.2 seconds<br>Price: $45,300<br>Manual transmission available",
+        image: "/vehicles/sport57.png"
+    },
+    sport65: {
+        title: "Sport GT 6.5",
+        stats: "Engine: 6.5L V8<br>Drivetrain: RWD only<br>Transmission: 6-speed manual / 8-speed automatic<br>Top Speed: 220 KM/H<br>Power: 490 HP<br>0-100 KM/H: 5.0 seconds<br>Price: $54,900<br>Manual transmission available",
+        image: "/vehicles/sport65.png"
+    },
+    battlehawk: {
+        title: "Battlehawk",
+        stats: "Engine: 6.5L Supercharged V8<br>Drivetrain: RWD only<br>Transmission: 6-speed manual / 8-speed automatic<br>Top Speed: 330 KM/H (not limited)<br>Power: 720 HP<br>0-100 KM/H: 4.6 seconds<br>Price: $79,600<br>Manual transmission available",
+        image: "/vehicles/battlehawk.png"
+    },
+    redtail: {
+        title: "Redtail",
+        stats: "Engine: 6.5L Supercharged V8<br>Drivetrain: RWD only<br>Transmission: 8-speed automatic<br>Top Speed: 330 KM/H (not limited)<br>Power: 820 HP<br>0-100 KM/H: 4.6 seconds<br>Price: $89,990",
+        image: "/vehicles/redtail.png"
+    }
+};
 
 
             const box = details[val];
@@ -93,5 +100,4 @@
         }
     </script>
 </body>
-
 </html>
